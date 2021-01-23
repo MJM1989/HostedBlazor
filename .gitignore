@@ -1,0 +1,9 @@
+# Created by .ignore support plugin (hsz.mobi)
+
+### C# Rider template
+## dotnet output folders
+bin/
+obj/
+
+## Rider IDE folder
+.idea/
