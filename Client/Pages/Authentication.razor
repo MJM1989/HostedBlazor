@@ -1,0 +1,13 @@
+@page "/authentication/{action}"
+@layout MainLayout
+@attribute [AllowAnonymous]
+
+<i class="fas fa-spinner fa-spin"></i>
+<Microsoft.AspNetCore.Components.WebAssembly.Authentication.RemoteAuthenticatorView Action="@Action"/>
+
+@code{
+
+    [Parameter]
+    public string Action { get; set; }
+
+}

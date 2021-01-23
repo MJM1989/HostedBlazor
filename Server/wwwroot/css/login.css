@@ -1,0 +1,81 @@
+header {
+    background-color: var(--dark-color);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body > header {
+    height: 60px;
+    font-size: 24px;
+}
+
+img {
+    margin: 60px;
+}
+
+.card {
+    width: 460px;
+    height: 460px;
+}
+
+.card > header {
+    height: 40px;
+    font-size: 20px;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    margin-bottom: 40px;
+}
+
+.card .instructions {
+    width: 75%;
+    text-align: center;
+    display: block;
+    margin: 30px auto;
+}
+
+.card .form-control {
+    width: 75%;
+    margin: 20px auto;
+}
+
+.card .form-control input {
+    line-height: 24px;
+    border: 2px solid var(--primary-color);
+    border-radius: 4px;
+    width: 100%;
+    font-size: 18px;
+    padding: 2px 6px;
+}
+
+.card .forgot-password {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.card .forgot-password a {
+    cursor: pointer;
+    color: var(--primary-color);
+}
+
+.card .actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.card #account .actions {
+    flex-direction: row-reverse;
+}
+
+.card .actions button {
+    width: 120px;
+    color: var(--lightest-color);
+    height: 36px;
+    margin: 0 10px;
+}
