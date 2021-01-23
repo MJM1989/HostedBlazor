@@ -1,15 +1,12 @@
-﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+<Project Sdk="Microsoft.NET.Sdk.Web">
 
     <PropertyGroup>
         <TargetFramework>net5.0</TargetFramework>
-        <UserSecretsId>95041e6c-47e5-420b-b395-80b2ec514ec6</UserSecretsId>
+        <UserSecretsId>HostedBlazor.Server-4F410E3E-B225-4F9D-B2C6-CADB24E93A35</UserSecretsId>
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Microsoft.AspNetCore.ApiAuthorization.IdentityServer" Version="5.0.2"/>
-        <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="5.0.2"/>
-        <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="5.0.2"/>
-        <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.2"/>
+        <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="5.0.1"/>
     </ItemGroup>
 
     <ItemGroup>
@@ -17,5 +14,13 @@
         <ProjectReference Include="..\Shared\HostedBlazor.Shared.csproj"/>
     </ItemGroup>
 
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="5.0.1"/>
+        <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="5.0.1"/>
+        <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="5.0.1"/>
+        <PackageReference Include="Microsoft.AspNetCore.ApiAuthorization.IdentityServer" Version="5.0.1"/>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.1"/>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.1"/>
+    </ItemGroup>
 
 </Project>

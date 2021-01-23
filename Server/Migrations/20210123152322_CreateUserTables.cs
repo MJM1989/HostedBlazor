@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace HostedBlazor.Server.Migrations
 {
-    public partial class InitialCreate : Migration
+    public partial class CreateUserTables : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

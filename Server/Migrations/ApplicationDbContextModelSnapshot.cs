@@ -17,9 +17,9 @@ namespace HostedBlazor.Server.Migrations
                 .HasDefaultSchema("User")
                 .UseIdentityColumns()
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
-                .HasAnnotation("ProductVersion", "5.0.2");
+                .HasAnnotation("ProductVersion", "5.0.1");
 
-            modelBuilder.Entity("CleanBudget.UI.Server.Models.ApplicationUser", b =>
+            modelBuilder.Entity("HostedBlazor.Server.Models.ApplicationUser", b =>
             {
                 b.Property<string>("Id")
                     .HasColumnType("nvarchar(450)");
@@ -333,7 +333,7 @@ namespace HostedBlazor.Server.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
             {
-                b.HasOne("CleanBudget.UI.Server.Models.ApplicationUser", null)
+                b.HasOne("HostedBlazor.Server.Models.ApplicationUser", null)
                     .WithMany()
                     .HasForeignKey("UserId")
                     .OnDelete(DeleteBehavior.Cascade)
@@ -342,7 +342,7 @@ namespace HostedBlazor.Server.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
             {
-                b.HasOne("CleanBudget.UI.Server.Models.ApplicationUser", null)
+                b.HasOne("HostedBlazor.Server.Models.ApplicationUser", null)
                     .WithMany()
                     .HasForeignKey("UserId")
                     .OnDelete(DeleteBehavior.Cascade)
@@ -357,7 +357,7 @@ namespace HostedBlazor.Server.Migrations
                     .OnDelete(DeleteBehavior.Cascade)
                     .IsRequired();
 
-                b.HasOne("CleanBudget.UI.Server.Models.ApplicationUser", null)
+                b.HasOne("HostedBlazor.Server.Models.ApplicationUser", null)
                     .WithMany()
                     .HasForeignKey("UserId")
                     .OnDelete(DeleteBehavior.Cascade)
@@ -366,7 +366,7 @@ namespace HostedBlazor.Server.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
             {
-                b.HasOne("CleanBudget.UI.Server.Models.ApplicationUser", null)
+                b.HasOne("HostedBlazor.Server.Models.ApplicationUser", null)
                     .WithMany()
                     .HasForeignKey("UserId")
                     .OnDelete(DeleteBehavior.Cascade)
