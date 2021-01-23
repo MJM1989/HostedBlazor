@@ -21,7 +21,7 @@ steps:
     publishWebProjects: false
     zipAfterPublish: false
     configuration: '$(buildConfiguration)'
-    projects: '**\Server.csproj'
+    projects: '**\*Server.csproj'
     arguments: '-o $(Build.ArtifactStagingDirectory)'
 
     
